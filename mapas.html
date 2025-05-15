@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="estilo/mapas.css">
+
+    <title>Locais Acessíveis</title>
+   
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css"/>
+</head>
+<body>
+        <nav class="navigation">
+            <i class="fa-brands fa-accessible-icon" id="logo">all<span>SPORTS</span></i>
+            <ul class="nav-menu" >
+                <li class="nav-item"><a href="index.html">Home</a></li>
+                <li class="nav-item"><a href="informe.html">Informe-se</a></li>
+                <li class="nav-item"><a href="cadastro.html">Cadastro</a></li>
+                <li class="nav-item"><a href="login.html">login</a></li>
+            </ul>
+            <div class="menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+
+          <div class="container">
+            <h2 class="texto">Locais Acessíveis em Brasília</h2>
+            <p>Encontre espaços adaptados próximo de voçê!</p><br>
+            <div id="mapa" class="mapa"></div>
+          </div>
+        
+          <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+          <script>
+            const mapa = L.map('mapa').setView([-15.7939, -47.8828], 12);
+        
+            L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+              attribution: '&copy; OpenStreetMap contributors'
+            }).addTo(mapa);
+        
+            L.marker([-15.800889, -47.911778]).addTo(mapa)
+              .bindPopup(`<strong>Parque da Cidade</strong><br>Rampas e estrutura acessível<br>
+              <a href="https://www.agenciabrasilia.df.gov.br" target="_blank">Ver mais</a>`);
+        
+            L.marker([-15.831141, -47.946499]).addTo(mapa)
+              .bindPopup(`<strong>Parque Aquático Claudio Coutinho</strong><br>
+              Estrutura acessível para esportes aquáticos<br>
+              <a href="https://www.esporte.df.gov.br" target="_blank">Ver mais</a>`);
+            
+  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    attribution: '&copy; OpenStreetMap',
+    maxZoom: 18,
+  }).addTo(mapa);
+
+  // Locais com atividades esportivas adaptadas
+
+  // Parque Ecológico do Lago Norte
+  L.marker([-15.724857, -47.849635]).addTo(mapa)
+    .bindPopup("<b>Parque Ecológico do Lago Norte</b><br>Paracanoagem, stand up paddle, arco e flecha e mais.");
+
+  // Centro Olímpico Paralímpico - Ceilândia (exemplo de um COP)
+  L.marker([-15.873431, -47.957223]).addTo(mapa)
+    .bindPopup("<b>Centro Olímpico Paralímpico - Ceilândia</b><br>Bocha, goalball, atletismo, parabadminton, natação adaptada.");
+
+  // Parque da Cidade
+  L.marker([-15.789530, -47.925700]).addTo(mapa)
+    .bindPopup("<b>Parque da Cidade Sarah Kubitschek</b><br>Área ampla para caminhadas, ciclismo e exercícios com acessibilidade.");
+
+    // Exemplo de markers para os locais acessíveis
+
+L.marker([-15.829821, -48.106508])
+  .addTo(map)
+  .bindPopup("<b>Centro Olímpico e Paralímpico de Ceilândia</b><br>Atividades adaptadas e gratuitas.<br><a href='https://www.esporte.df.gov.br/cops' target='_blank'>Mais informações</a>");
+
+L.marker([-15.875175, -48.096325])
+  .addTo(map)
+  .bindPopup("<b>CIDP - Samambaia</b><br>Modalidades paralímpicas para estudantes da rede pública.<br><a href='https://www.educacao.df.gov.br/esporte-paralimpico' target='_blank'>Mais informações</a>");
+
+L.marker([-15.701187, -47.853862])
+  .addTo(map)
+  .bindPopup("<b>UNA Parque - Lago Norte</b><br>Parque 100% inclusivo com esportes adaptados.<br><a href='https://www.segov.df.gov.br/brasilia-ganha-o-1o-parque-100-inclusivo-do-pais' target='_blank'>Mais informações</a>");
+
+L.marker([-15.726492, -47.857220])
+  .addTo(map)
+  .bindPopup("<b>Circuito Adaptado do Lago Norte</b><br>Ginástica ao ar livre para PcD.<br><a href='https://www.agenciabrasilia.df.gov.br/2015/10/08/lago-norte-ganha-circuito-para-exercicios-fisicos-adaptado-a-pessoas-com-deficiencia' target='_blank'>Mais informações</a>");
+
+L.marker([-15.798218, -47.911650])
+  .addTo(map)
+  .bindPopup("<b>Parque da Cidade – Estação Adaptada</b><br>Estação de ginástica com piso emborrachado.<br><a href='https://www.agenciabrasilia.df.gov.br/2017/07/15/parque-da-cidade-ganha-estacao-de-ginastica-ao-ar-livre-adaptada-para-pessoas-com-deficiencia' target='_blank'>Mais informações</a>");
+
+
+
+
+          </script>
+        
+        </body>
+        </html>
+        

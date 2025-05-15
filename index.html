@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="estilo/style.css">
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+
+    <title>ALLSPORTS</title>
+</head>
+<body>
+    
+    <header>
+        <nav class="navigation">
+            <i class="fa-brands fa-accessible-icon" id="logo">all<span>SPORTS</span></i>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="index.html" class="sublinhado-gradiente">Home</a></li>
+                <li class="nav-item"><a href="informe.html" class="sublinhado-gradiente">Informe-se</a></li>
+                <li class="nav-item"><a href="cadastro.html" class="sublinhado-gradiente">Cadastro</a></li>
+                <li class="nav-item"><a href="login.html" class="sublinhado-gradiente">login</a></li>
+            </ul>
+            <div class="menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+
+<!--começo da pagina abaixo-->
+
+    
+<section class="home">
+    <div class="home-text">
+        <h1 class="text-h1" id="logo" >ALL<span class="sublinhado-gradiente">SPORTS</span> </h1>
+      <!--<h2 class="h2-titulo">Esporte para todos</h2>-->
+        <p class="paragrafo"><span>Cadastre-se</span> para encontrar locais acessíveis, buscando tornar o esporte mais democrático e acessível para todos.</p>
+        
+        <a href="cadastro.html" class="home-btn">Cadastre-se</a>
+
+    </div>
+   
+ 
+</section>
+
+<!--A seção "sobre nos abaixo-->
+
+
+    <section class="about" id="about">
+        <h2 class="heading"><span>Sobre</span> Nós</h2>
+        <div class="row">
+            <div class="video-container">
+                <video src="img/Design sem nome (1).mp4"  loop autoplay muted ></video>
+                <h3>Inclusão</h3>
+            </div>
+
+            <div class="content">
+                <h4 >Empresa</h4>
+                <p>A ALLSPORTS é uma plataforma digital dedicada a promover a inclusão de pessoas com deficiência ao esporte, conectando pessoas com uma navegação simples e funcionalidades pensadas com empatia, promovemos a inclusão real por meio da tecnologia. Seja você um atleta, educador, organizador ou alguém em busca de bem-estar e representatividade: este espaço é seu.<br><br>
+                <!-- <span>         CONECTAR    |     INFORMAR     |     INSPIRAR    </span>-->
+                </p><br>
+            </div>    
+            
+            
+            <i class="fa-solid fa-link"></i>link 
+            <i class="fa-solid fa-info"></i>info
+            <i class="fa-solid fa-lightbulb"></i>
+        </div>
+
+    </section>
+<!--A seção dos tipos de esporte começa abaixo-->
+      <!-- Swiper CSS -->
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+       
+
+        <h2 class="heading">Alguns exeplos de esportes adaptados</h2>     
+      
+    
+      <div class="swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><img class="imagem"  src="img/arco2.webp" alt="Imagem 1"></div>
+          <div class="swiper-slide"><img class="imagem" src="img/atleta2.jpg" alt="Imagem 2"></div>
+          <div class="swiper-slide"><img class="imagem" src="img/atletismo.jpg" alt="Imagem 3"></div>
+          <div class="swiper-slide"><img class="imagem" src="img/basquete2.jpg" alt="Imagem 4"></div>
+          <div class="swiper-slide"><img class="imagem" src="img/bocha4.jpg" alt="Imagem 5"></div>
+          <div class="swiper-slide"><img class="imagem" src="img/esgrima.jpg" alt="Imagem 6"></div>
+          <div class="swiper-slide"><img class="imagem" src="img/futebol.webp" alt="Imagem 6"></div>
+          <div class="swiper-slide"><img class="imagem" src="img/hipismo.jpg" alt="Imagem 6"></div>
+        </div>
+    
+        <!-- Botões -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+    
+      <!-- Swiper JS -->
+      <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    
+      <!-- Configuração do Swiper -->
+      <script>
+        const swiper = new Swiper('.swiper', {
+          slidesPerView: 3,
+          spaceBetween: 16,
+          slidesPerGroup: 1,
+          loop: true,
+          navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+          },
+        });
+      </script>
+    
+ <footer class="footer">
+  <h2 class="text">ALL<span>SPORTS</span><br>Esportes para todos<br></h2>
+ </footer>
+</body>
+</html>   
