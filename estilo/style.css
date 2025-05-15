@@ -1,0 +1,339 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Lobster&family=Playwrite+AU+SA:wght@100..400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+
+body{
+    background-image: linear-gradient(45deg, #F5F5F5,  #87CEEB);
+    color: black;
+}
+
+.navigation{
+    background-color: #87ceeb;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 23px 46px;
+    box-shadow: 0 0.1rem 0.5rem rgb(56, 4, 56);
+    width: 100%;
+    transition: all 0.5s;
+    position: fixed;
+    z-index: 1;
+}
+
+.navigation .sublinhado-gradiente{
+        background-image: linear-gradient(90deg, blue, purple);
+        background-repeat: no-repeat;
+        background-size: 0% 3px;
+        background-position: left bottom;
+        transition: background-size 500ms ease;
+}
+
+.navigation .sublinhado-gradiente:hover{
+        background-size: 100% 3px;
+}
+
+.navigation #logo{
+    cursor: default;
+    color: black;
+    font-size: 1.7rem;
+    font-weight: 600;
+}
+
+#logo span{
+    color: blueviolet;
+    font-family: "Roboto", light;
+    font-style: italic;
+}
+
+.navigation ul{
+    display: flex;
+    align-items: center;
+    gap: 5rem;
+}
+
+.navigation ul li a{
+    color: black;
+    font-size: 17px;
+    font-weight: 500;
+    transition: all 0.5s;
+}
+
+.navigation ul li a:hover{
+    color: purple;
+}
+
+.navigation i{
+    cursor: pointer;
+    font-size: 1.5rem;
+}
+
+.menu{
+    cursor: pointer;
+    display: none;
+}
+
+.menu .bar{
+    display: block;
+    width: 28px;
+    height: 3px;
+    border-radius: 3px;
+    background: white;
+    margin: 5px auto;
+    transition: all 0.3s;
+}
+
+.menu .bar:nth-child(1),
+.menu .bar:nth-child(3){
+    background: purple;
+}
+
+/*começo da pagina abaixo*/
+
+
+.home{
+    background-image: linear-gradient(to left, rgba(255,255,255,0)0%,  rgba(135, 206, 235, 1.0)100%), url(../img/natacao2.png);
+    background-size: cover;
+    background-position: center;
+
+    
+    cursor: default;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 10%;
+}
+
+.background{
+    background: url(../img/natacao.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    
+}
+
+.home-text{
+    max-width: 37rem;
+}
+
+
+
+.home-text .text-h1{
+    margin-top: 35px;
+    font-size: 4rem;
+    margin-bottom: 1rem;
+    line-height: 4rem;
+}
+
+.h2-titulo{
+    margin-top: -20px;
+    font-size: 50px;
+}
+
+.home  .sublinhado-gradiente{
+    background-image: linear-gradient(90deg, blue, purple);
+    background-repeat: no-repeat;
+    background-size: 0% 3px;
+    background-position: left bottom;
+    transition: background-size 500ms ease;
+}
+.home .sublinhado-gradiente:hover{
+    background-size: 100% 3px;
+}
+
+.home-text p{
+    margin-bottom: 4rem;
+    font-size: 20px;
+    font-weight: 500;
+    width: 85%;
+    gap: 5rem;
+}
+
+.paragrafo{
+    padding-top: 19px;
+    text-align: left;
+    
+}
+
+.paragrafo span{
+    text-decoration: dashed;
+    font-style: italic;
+}
+
+
+.heading{
+    text-align: center;
+    font-size: 4rem;
+    color: #333;
+    padding: 1rem;
+    margin: 2rem 0;
+
+    background: #87CEFA;
+}
+
+.heading span{
+    color: #87CEEB;
+}
+
+.home-btn{
+    padding: 10px 20px;
+    background: purple;
+    color: white;
+    border-radius: 8px;
+    font-weight: 500;
+    transition: all 0.5s;
+}
+
+.home-btn:hover{
+    background: purple;
+}
+
+
+
+/*A seção "sobre nos" abaixo*/
+
+.heading{
+    display: block;
+    text-align: center;
+    font-size: 35px;
+    color: black;
+    padding: 1rem;
+    background: #87CEFA;
+    width: 100%;
+    
+}
+
+
+
+.heading span{
+    color: black;
+}
+
+
+.about .row{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    padding: 2rem 0;
+    padding-bottom: 3rem;
+}
+
+.about .row .video-container{    
+    flex: 1 1 40rem;
+    position: relative;
+    
+}
+
+.about .row .video-container video{
+    margin-left: 40px;
+    width: 95%;
+    border: 1px solid #87CEEB;
+    border-radius:  .5rem;
+    box-shadow: 0 .5rem 1rem #87CEEB;
+    height: 100%;
+    object-fit: contain;
+}
+
+.about .row .video-container h3{
+    margin-left: 41.3px;
+    position: absolute;
+    top: 50%; transform: translateY(-50%);
+    font-size: 2rem;
+    background: #abd8eb;
+    width: 94.7%;
+    padding: -1px;
+    padding-left: 20px;
+    text-align: center;
+    mix-blend-mode: screen;
+
+}
+
+.about .row .content{
+    flex: 1 1 40rem;
+    padding-left: 30px;
+    background: #abd8eb;
+    border-radius: 20px;
+    
+    
+}
+
+.about .row .content h4{
+
+    margin-top: 50px;
+    font-size: 3rem;
+    color: #333;
+
+}
+
+
+
+.about .row .content p{
+    text-align: justify;
+    margin-top: -30px;
+    width: 90%;
+    font-size: 1.2rem;
+    color: black;
+    padding: 1px;
+    padding-top: 50px;
+    line-height: 1.8;
+}
+
+
+
+/*A parte do carrossel de imagens começa abaixo*/
+
+    .swiper {
+      width: 400%;
+      height: 300px;
+      max-width: 1200px;
+      margin: auto;
+      
+    }
+
+    .swiper-slide {
+      background: #abd8eb;
+      gap: 1rem;
+      border-radius: 5px;
+      text-align: center;
+      padding: 5px;
+    }
+
+    .swiper-slide img {
+        
+      width: 100%;
+      height: 280px;
+      object-fit: cover;
+      border-radius: 5px;
+    }
+
+    .imagem{
+        padding: 3px;
+    }
+
+    .footer{
+        margin-top: 150px;
+        padding: 50px;
+        background-color: #abd8eb;
+        border-top: 5px solid #87CEFA;
+        border-radius: 10px;
+        align-items: center;
+    }
+
+.text{
+    text-align: center;
+    font-weight: 300;
+} 
+
+.text span{
+    font-style: italic;
+    color: purple;
+}
